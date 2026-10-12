@@ -22,10 +22,15 @@ except ValueError:
 
 assert True
 
+from app import add, subtract, multiply, divide, power
+def test_power():
+assert power(2, 3) == 8
+
 if __name__ == "__main__":
 test_add()
 test_subtract()
 test_multiply()
 test_divide()
 test_divide_by_zero()
+test_power()
 print("✅ All tests passed!")
